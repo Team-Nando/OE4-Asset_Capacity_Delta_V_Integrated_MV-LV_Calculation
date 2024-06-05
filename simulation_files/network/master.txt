@@ -1,0 +1,26 @@
+Clear
+
+Set DefaultBaseFrequency=50
+
+New Circuit.CRE21
+
+!-----Elements--------
+Redirect load-shapes.txt
+Redirect line-codes.txt
+Redirect hv-transformers.txt
+Redirect volt-regulator.txt
+Redirect v-source.txt
+Redirect hv-lines.txt
+Redirect lv-transformers.txt
+Redirect lv-lines.txt
+Redirect lv-loads.txt
+Redirect pv-systems-lv.txt
+Redirect pv-inverters.txt
+
+!-----Settings--------
+Set maxiterations=1000
+Set Maxcontroliter=1000
+
+!-----Load Flow------
+calcvoltagebases
+calcv
